@@ -1,0 +1,1 @@
+# vue-js-exercise-3-property-mini-listings
