@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.site-header {
+  padding: 30px;
+  background: #184c5c;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.site-header p {
+  margin: 10px 0 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.search-panel {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: end;
+}
+
+label {
+  flex: 1;
+  display: block;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  min-height: 42px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.listing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.property-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 6px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.property-card.unavailable {
+  opacity: 0.7;
+}
+
+.property-card img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.property-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.property-info h2 {
+  margin: 10px 0;
+  min-height: 56px;
+  font-size: 20px;
+}
+
+.property-info p {
+  margin: 5px 0;
+}
+
+.price {
+  color: #184c5c;
+  font-weight: bold;
+}
+
+.badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 5px 8px;
+  background: #d9534f;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.property-card button {
+  margin-top: auto;
+  background: #184c5c;
+  color: white;
+  cursor: pointer;
+}
+
+.empty {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .search-panel {
+    flex-direction: column;
+  }
+}
